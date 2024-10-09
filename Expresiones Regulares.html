@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validacion</title>
+</head>
+<body>
+
+<!-- Formulario -->
+<form action="Expresiones Regulares.php" method="POST">
+
+    <fieldset>
+        <legend>Información Personal</legend>
+
+        <!-- DNI -->
+
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" placeholder="DNI" pattern="^\d{8}[A-Za-z]$" title="Introducir un dni valido comuesto de 8 numeros y una letra" required>
+        <br><br>
+
+        <!-- Matricula -->
+
+
+        <label for="matricula">Matricula:</label>
+        <input type="text" id="matricula" name="matricula" placeholder="Matricula" pattern="^\d{4}[ -]?[BCDFGHJKLMNPQRSTVWXYZ]{3}$" title="Introduce una matricula compuesta por 4 digitos y 3 letras" required>
+        <br><br>
+
+        <!-- Correo Electronico -->
+
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" placeholder="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}$" title="Introduce un correo valido" required>
+        <br><br>
+
+
+        <!-- Cuenta Bancaria -->
+
+
+        <label for="iban">IBAN:</label>
+        <input type="text" id="iban" name="iban" placeholder="Iban" pattern="^[a-zA-Z]{2}[0-9]{20}$" title="Introduce un iban valido" required>
+        <br><br>
+
+
+        <!-- Telefono -->
+
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Telefono" pattern="^\d{8}$" title="Introduce un telefono valido" required>
+        <br><br>
+        
+        <!-- Codigo postal -->
+
+
+        <label for="codigo_postal">Codigo postal:</label>
+        <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Codigo postal" pattern="^\d{5}$" title="Introduce un codigo postal valido" required>
+        <br><br>
+
+        <!-- Fecha  -->
+
+        <label for="fecha">Fecha (DD/MM/AAAA):</label>
+        <input type="text" id="fecha" name="fecha" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" title="Introduce una fecha válida. Formato: DD/MM/AAAA." required>
+        <br><br>
+
+
+        <label for="Enviar">Enviar</label>
+        <button type="submit" name="Enviar">Enviar</button>
+        
+</form>
+
+</body>
+</html>
